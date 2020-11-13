@@ -1,0 +1,28 @@
+header name user
+ORDER SUMMARY - ORDER ITEMS decimal
+carousel
+pagination
+category using loop map
+price color
+count in stock will reduce if user paid 
+
+async function processAuctions(event,context) { 
+    const auctionToClose = await getEndedAuctions();
+    const closePromises = auctionToClose.map(auction => closeAuction(auction.id));
+        await Promise.all(closePromises);
+    }
+
+export const handler = processAuctions;
+
+count in stock in product profile
+AWS utize
+
+Add product. 
+Gaming keyboard ,headset, CPU , Monitor 
+Laptops
+
+
+design-
+footer info
+layout
+logo
